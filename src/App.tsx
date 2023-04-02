@@ -22,8 +22,7 @@ function App() {
                     setAccordeonCollapsed(!accordeonCollapsed)
                 }}
                 collapsed={accordeonCollapsed}/>
-            {/*<UncontrolledRating onChange={} />*/}
-            {/*<UncontrolledonOff swithOnOff={true}/>*/}
+
             <UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}
             {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
         </div>

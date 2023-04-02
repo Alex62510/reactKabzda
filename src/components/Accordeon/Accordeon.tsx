@@ -1,6 +1,6 @@
 import React from "react";
 
-type AccordeonPropsType = {
+export type AccordeonPropsType = {
     titleValue: string
     collapsed: boolean
     onChange: () => void
