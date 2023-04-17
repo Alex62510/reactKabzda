@@ -16,12 +16,13 @@ function App() {
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<UncontrolledAccordeon titleValue={"Menu"}  />*/}
             {/*<UncontrolledAccordeon titleValue={"Users"}  />*/}
-            <Accordeon
-                titleValue={"Users"}
-                onChange={() => {
-                    setAccordeonCollapsed(!accordeonCollapsed)
-                }}
-                collapsed={accordeonCollapsed}/>
+            {/*<Accordeon*/}
+            {/*    items={items}*/}
+            {/*    titleValue={"Users"}*/}
+            {/*    onChange={() => {*/}
+            {/*        setAccordeonCollapsed(!accordeonCollapsed)*/}
+            {/*    }}*/}
+            {/*    collapsed={accordeonCollapsed}/>*/}
 
             <UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}
             {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
