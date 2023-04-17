@@ -1,5 +1,5 @@
 import React from "react";
-import {RatingPropsType} from "../Rating/Rating";
+import s from './Select.module.css'
 
 export type ItemType={
     title:string
@@ -7,17 +7,27 @@ export type ItemType={
 }
 
 export type SelectPropsType = {
-    value: any
+    value?: any
     onChange: () => void
     items:ItemType[]
 }
 
 export function Select(props: SelectPropsType) {
-
+const selectedItems = props.items.find(t=>t.value===props.value)
     return (
-        <div>
-            <div>{}</div>
-            {props.items.map(t=><div>{t.title}</div>)}
-        </div>
+        <>
+            <select>
+                <option value="1">Minsk</option>
+                <option value="2">Moskow</option>
+                <option value="3">Kiev</option>
+            </select>
+            <div className={s.select + " " + s.active}>
+                <h3>{selectedItems && selectedItems.title}</h3>
+                <div className={s.items}>
+                    {props.items.map(t=><div key={t.value}>{t.title}</div>)}
+                </div>
+            </div>
+        </>
+
     )
 }
