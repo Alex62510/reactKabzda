@@ -6,6 +6,7 @@ import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRa
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {Accordeon} from "./components/Accordeon/Accordeon";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {Select} from "./components/Select/Select";
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
@@ -26,6 +27,7 @@ function App() {
 
             <UncontrolledOnOff onChange={setSwitchOn}/>{switchOn.toString()}
             {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+
         </div>
     );
 }
