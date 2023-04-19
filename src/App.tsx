@@ -15,7 +15,7 @@ function App() {
     return (
         <div className={"App"}>
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
-            {/*<UncontrolledAccordeon titleValue={"Menu"}  />*/}
+            <UncontrolledAccordeon titleValue={"Menu"}  />
             {/*<UncontrolledAccordeon titleValue={"Users"}  />*/}
             {/*<Accordeon*/}
             {/*    items={items}*/}
