@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 export type PropsType={
-
 }
 const func2dString=(num:number)=> num<10 ? "0" + num: num
 export const Clock: React.FC<PropsType>=(props)=>{
