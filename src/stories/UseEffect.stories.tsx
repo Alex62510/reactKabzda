@@ -45,8 +45,23 @@ export const SatTimeOutExample = () => {
             console.log(a.getSeconds())
         }, 1000)
     }, [])
+    return <>
+        counter: {counter}
+        {/*<button onClick={() => {setCounter(counter + 1)}}>+</button>*/}
+
+    </>
+}
+export const ResetTimeOutExample = () => {
+    const [counter, setCounter] = useState(1)
+
+    console.log("ResetTimeOutExample")
 
 
+    useEffect(() => {
+
+            console.log("effect occured")
+
+    }, [])
     return <>
         counter: {counter}
         {/*<button onClick={() => {setCounter(counter + 1)}}>+</button>*/}
