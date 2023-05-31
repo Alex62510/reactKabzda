@@ -1,12 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import {OnOff} from "./components/OnOff/OnOff";
 import {UncontrolledAccordeon} from "./components/UncontrolledAccordeon/UncontrolledAccordeon";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {Accordeon} from "./components/Accordeon/Accordeon";
 import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
-import {Select} from "./components/Select/Select";
+
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
